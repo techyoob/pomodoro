@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
   resetBtn:{
     '&.MuiButtonBase-root': {
-      backgroundColor:'#faebd78a',
+      backgroundColor:'#faebd7',
       border:'2px solid #4caa9a',
       color:'#4caa9a'
     },
@@ -109,11 +109,18 @@ const useStyles = makeStyles((theme) => ({
     
   },
   dailogTitleBox: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#635d5b',
+    color:'#faebd7'
+  },
+  dialogBtn:{    
+    '&.MuiButtonBase-root': {
+      backgroundColor:'#c84a47',
+      color:'#faebd7'
+    },
   },
   pomoOptionsBox: {
     padding:'25px',
-    backgroundColor:'turquoise'
+    backgroundColor:'#9d8f8b'
   },
   pomoOptions: {
     display:'flex',
@@ -369,7 +376,7 @@ const NextPhaseDialog = (props) => {
               return(
                 <Grid item xs={6} className={classes.pomoOptions} key={i}>
                   <Button
-                    className={classes.btn}
+                    className={classes.dialogBtn}
                     onClick = {()=>onSelectNextPhase(phaseItem)}>
                       {phaseItem?.name}
                   </Button>
@@ -408,14 +415,14 @@ const ConfirmationDialog = (props) => {
         <Grid container spacing={2} className={classes.pomoOptionsBox}>
           <Grid item xs={6} className={classes.pomoOptions}>
             <Button
-              className={classes.btn}
+              className={classes.dialogBtn}
               onClick = {()=>onConfirmNextPhase()}>
                 Yes
             </Button>
           </Grid>
           <Grid item xs={6} className={classes.pomoOptions}>
             <Button
-              className={classes.btn}
+              className={classes.dialogBtn}
               onClick = {()=>handleClose()}>
                 No
             </Button>
