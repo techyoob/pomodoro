@@ -17,6 +17,7 @@ import { makeStyles } from '@mui/styles';
 
 // Application
 import { convertToMMSS } from './utils';
+import { ReactComponent as PomoLogo } from './logo1v1.svg';
 
 
 
@@ -248,6 +249,10 @@ function App() {
   return (
     <div className="pomo-app">
       <div className='pomo-container'>
+        <div className='pomo-logo-container'>
+          <PomoLogo height='100%'/>
+          <span> Pomodoro </span>
+        </div>
         <Box
           className={classes.pomoToolBox} >
           <Grid container spacing={2} sx={{padding:'20px'}}>

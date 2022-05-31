@@ -29,3 +29,21 @@
 .pomo-stats-box {
   margin-top: 15px;
 }
+
+.pomo-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.pomo-logo-container span{
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family:cursive;
+  color: #615957;
+
+}
